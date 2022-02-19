@@ -1,0 +1,82 @@
+.padding-demo{
+  width: 200px;
+  background-color: red;
+  padding: 25% 50%;
+}
+
+
+
+a + a::before {
+  content: "";
+  font-size: 0;
+  padding: 10px 3px 1px;
+  margin-left: 6px;
+  border-left: 1px solid gray;
+}
+
+
+.img{
+  display: inline-block;
+  width: 256px;
+  height: 192px;
+  color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.img:not([src]){
+  visibility: hidden;
+}
+
+.img::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f3f9;
+  visibility: visible;
+}
+
+
+.img::after{
+  content: attr(alt);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 14px;
+  transform: translateY(100%);
+  transition: transform .2s;
+  visibility: visible;
+}
+
+.img:hover::after {
+  transform: translateY(0);
+}
+
+h1{
+  content: url('./logo512.png');
+}
+
+.box_wrap{
+  width: 200px;
+  /* height: 100px; */
+  background-color: sandybrown;
+}
+
+.box_child{
+  width: 50px;
+  height: 50px;
+  float: left;
+  background-color: sienna;
+}
+
+.box_child::after{
+  content: '';
+  display: block;
+  clear: both;
+}
