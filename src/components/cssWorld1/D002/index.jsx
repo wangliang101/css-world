@@ -6,12 +6,20 @@ const D002 = () => {
 
   return(
     <div className='D002_wrap'>
-      <h1>4.2.4 padding与图形绘制</h1>
       <p>
-        <i class="icon-menu"></i>
+        <h1>4.2.4 padding与图形绘制</h1>
+        <p>
+          <i class="icon-menu"></i>
+        </p>
+        <p>
+          <i class="icon-dot"></i>
+        </p>
       </p>
       <p>
-        <i class="icon-dot"></i>
+        <h1>4.3 激进的margin属性</h1>
+        <div className='father'>
+          <div className='son'></div>
+        </div>
       </p>
     </div>
   )
