@@ -1,4 +1,8 @@
 .home_wrap{
-  background-color: gray;
   height: 100vh;
+  
+}
+/* 为了覆盖antd的全局样式 */
+*, *::before, *::after{
+  box-sizing: content-box;
 }
