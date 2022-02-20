@@ -21,6 +21,10 @@ const D002 = () => {
           <div className='son'></div>
         </div>
       </p>
+      <p>
+        <h1>4.4 border</h1>
+        <div className='box'>  </div>
+      </p>
     </div>
   )
 }
