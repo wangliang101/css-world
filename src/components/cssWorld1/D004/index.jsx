@@ -6,7 +6,7 @@ const D004 = () => {
 
   return(
     <div className='D004_wrap'>
-      <p>
+      {/* <p>
         <h1>4.2.4 padding与图形绘制</h1>
         <p>
           <i class="icon-menu"></i>
@@ -14,7 +14,7 @@ const D004 = () => {
         <p>
           <i class="icon-dot"></i>
         </p>
-      </p>
+      </p> */}
     </div>
   )
 }
